@@ -435,7 +435,7 @@ p {
 }
 
 .portfolio-item {
-  /* width: calc((100% - 24px * 2) / 3); */
+  width: calc((100% - 24px * 2) / 3);
 
   cursor: pointer;
 
@@ -490,6 +490,7 @@ p {
 }
 
 .portfolio-item-box {
+  width: 360px;
   padding: 32px 16px;
 
   border-bottom: 1px solid #e7e9fc;
@@ -497,7 +498,7 @@ p {
   border-right: 1px solid #e7e9fc;
 }
 
-/**====================================   footer   ===*/
+/**====================================   Footer   ===*/
 
 .footer {
   background-color: #2e2f42;
@@ -551,4 +552,32 @@ p {
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
+}
+
+/**====================================   Modal   ===*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  min-height: 584px;
+
+  border-radius: 4px;
+
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
 }
