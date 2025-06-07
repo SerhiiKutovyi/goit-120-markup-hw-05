@@ -587,7 +587,7 @@ input {
   margin-bottom: 16px;
 }
 
-.footer-input-box {
+.footer-form {
   display: flex;
   column-gap: 24px;
 }
@@ -602,7 +602,7 @@ input {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
