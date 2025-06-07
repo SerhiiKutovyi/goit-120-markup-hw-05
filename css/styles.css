@@ -589,7 +589,7 @@ input {
 
 .footer-form {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .footer-input {
@@ -598,7 +598,9 @@ input {
   height: 40px;
   width: 264px;
 
-  border: 1px solid #4d5ae5;
+  line-height: 2;
+
+  border: 1px solid#ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
@@ -618,11 +620,13 @@ input {
 }
 
 .footer-form-btn {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding: 8px 64px 8px 24px;
 
-  width: 165px;
+  min-width: 165px;
   height: 40px;
 }
 
@@ -633,15 +637,13 @@ input {
 }
 
 .footer-submit-icon {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #fff;
+  margin-left: 16px;
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: #fff;
 }
 
 .footer-form-btn:hover > .footer-submit-icon,
@@ -677,7 +679,7 @@ input {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -708,6 +710,8 @@ input {
   top: 24px;
   right: 24px;
 
+  padding: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -720,6 +724,8 @@ input {
   transition-property: background-color, fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
 
   background-color: #e7e9fc;
 }
