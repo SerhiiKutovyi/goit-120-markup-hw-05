@@ -121,7 +121,7 @@ input {
   border-radius: 4px;
   border: none;
 
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -577,6 +577,78 @@ input {
   margin-bottom: 16px;
 }
 
+.footer-form-box {
+  margin-left: auto;
+}
+
+.footer-input-text {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-input-box {
+  display: flex;
+  column-gap: 24px;
+}
+
+.footer-input {
+  padding: 8px 16px 8px 16px;
+
+  height: 40px;
+  width: 264px;
+
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  color: #fff;
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #31d0aa;
+}
+
+.footer-input:focus {
+  border: 1px solid #31d0aa;
+}
+
+.footer-form-btn {
+  position: relative;
+
+  padding: 8px 64px 8px 24px;
+
+  width: 165px;
+  height: 40px;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #31d0aa;
+  color: #4d5ae5;
+}
+
+.footer-submit-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #fff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover > .footer-submit-icon,
+.footer-form-btn:focus > .footer-submit-icon {
+  fill: #4d5ae5;
+}
+
 /**====================================   Modal   ===*/
 
 .backdrop {
@@ -689,7 +761,8 @@ input {
   height: 40px;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-comment:focus {
   border: 1px solid #4d5ae5;
 }
 
