@@ -832,7 +832,8 @@ input {
 }
 
 .label-check {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
 
   font-weight: 400;
@@ -843,11 +844,11 @@ input {
 }
 
 .check-custom {
-  position: relative;
-
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 
   margin-right: 8px;
 
@@ -885,4 +886,6 @@ input {
 
 .form-send-btn {
   margin: 0 auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
