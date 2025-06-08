@@ -830,7 +830,15 @@ input {
   margin-bottom: 16px;
 }
 
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
 .label-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -877,10 +885,6 @@ input {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
-}
-
-.checkbox-wrapper {
-  margin-bottom: 24px;
 }
 
 .form-send-btn {
